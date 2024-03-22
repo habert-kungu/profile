@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <!-- Import Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap">
+    <!-- Include external CSS files -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <!-- Separate style for all elements -->
+    <style>
+        /* Apply the CSS rule for all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Gowun Dodum", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+    <!-- Additional styles for specific elements -->
+    <style>
+        /* Style the profile card */
+        .profile-card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        /* Style the profile image */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Style the profile name */
+        .profile-name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Style the profile description */
+        .profile-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Style the profile social icons */
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-icons li:last-child {
+            margin-right: 0;
+        }
+
+        .social-icons a {
+            color: #333;
+            font-size: 20px;
+        }
+
+        /* Add color to social icons */
+        .social-icons a.instagram {
+            color: #bc2a8d; /* Instagram pink */
+        }
+
+        .social-icons a.twitter {
+            color: #1da1f2; /* Twitter blue */
+        }
+
+        .social-icons a.github {
+            color: #333; /* GitHub black */
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <div class="profile-card">
+        <div class="image">
+            <!-- Ensure the correct path to the image -->
+            <img src="habert.jpeg" alt="Profile Image" class="profile-img">
+        </div>
+        <h2 class="profile-name">Habert Kungu</h2>
+        <p class="profile-description">Web Developer</p>
+        <ul class="social-icons">
+            <li><a href="#" class="instagram"><i class="bx bxl-instagram"></i></a></li>
+            <li><a href="#" class="twitter"><i class="bx bxl-twitter"></i></a></li>
+            <li><a href="#" class="github"><i class="bx bxl-github"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
